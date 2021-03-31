@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Login</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% endblock %}
+{% block body %}
+<center class="p-5">
+    <div class="jumbotron">
+        <h3>{{ error }}</h3>
+    </div>
+</center>
+{% endblock %}

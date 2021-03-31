@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block head %}
+<title>Hola Mundo</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="container">
+        {% if name %}
+            <h1>Hola {{ name }}!!!</h1>
+        {% else %}
+            <h1>Hola Mundo!!!</h1>
+        {% endif %}
+    </div>
+{% endblock %}
